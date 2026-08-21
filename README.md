@@ -83,63 +83,49 @@ flowchart TD
 ### 1. Challenge Command Center & Active Live Targets
 > Real-time monitoring of available vulnerable challenge labs and active live defender instances.
 
-<div align="center">
-  <img src="screenshots/01_dashboard.png" alt="Cyber Arena Dashboard" width="95%" style="border-radius: 8px; border: 1px solid #00e5ff; box-shadow: 0 0 20px rgba(0,229,255,0.2);" />
-</div>
+![Cyber Arena Dashboard](screenshots/01_dashboard.png)
 
 ---
 
 ### 2. Defender IDE & 1-Click Sandbox Evaluation Runner
 > Integrated browser code editor featuring AST templates, immediate Docker sandbox compilation, functional smoke invariants, and automated 6-axis mutation benchmark execution in a single click.
 
-<div align="center">
-  <img src="screenshots/02_defender_submission.png" alt="Defender IDE & Evaluation" width="95%" style="border-radius: 8px; border: 1px solid #00ff66; box-shadow: 0 0 20px rgba(0,255,102,0.2);" />
-</div>
+![Defender IDE & Evaluation](screenshots/02_defender_submission.png)
 
 ---
 
 ### 3. Faculty Explainability & 6-Axis Mutation Matrix
 > Granular audit dashboard breaking down candidate patch resilience across all 6 mutation axes (Encoding, Case Shifts, Comments, Whitespace, Syntax, Differential Boolean Logic) and displaying transparent `DB_ERROR` classification guarantees.
 
-<div align="center">
-  <img src="screenshots/03_explainability_report.png" alt="Explainability & Mutation Report" width="95%" style="border-radius: 8px; border: 1px solid #00e5ff; box-shadow: 0 0 20px rgba(0,229,255,0.2);" />
-</div>
+![Explainability & Mutation Report](screenshots/03_explainability_report.png)
 
 ---
 
 ### 4. Live Adversarial Red-Team Arena & Payload Forge
 > Full-screen interactive attacker terminal equipped with categorized attack matrix chips, multi-target defender container switching, high-contrast digital match window countdown (`20m 00s Total`), and instant match conclusion controls.
 
-<div align="center">
-  <img src="screenshots/04_attacker_arena.png" alt="Live Attacker Arena" width="95%" style="border-radius: 8px; border: 1px solid #ff003c; box-shadow: 0 0 20px rgba(255,0,60,0.2);" />
-</div>
+![Live Attacker Arena](screenshots/04_attacker_arena.png)
 
 ---
 
 ### 5. Research Architecture & Formal Verification Inspector
 > Interactive academic explainability interface detailing container isolation guarantees, dual-oracle decision theorems, and mathematical scoring models.
 
-<div align="center">
-  <img src="screenshots/05_architecture_visualizer.png" alt="System Architecture Visualizer" width="95%" style="border-radius: 8px; border: 1px solid #00e5ff; box-shadow: 0 0 20px rgba(0,229,255,0.2);" />
-</div>
+![System Architecture Visualizer](screenshots/05_architecture_visualizer.png)
 
 ---
 
 ### 6. Composite Multi-Dimensional Leaderboard
 > Real-time rankings aggregating Defensive Engineering points ($R\% \times \text{Points}$ for verified patches) and Offensive Flag Captures + Arena Breaches.
 
-<div align="center">
-  <img src="screenshots/06_leaderboard.png" alt="Composite Leaderboard" width="95%" style="border-radius: 8px; border: 1px solid #00ff66; box-shadow: 0 0 20px rgba(0,255,102,0.2);" />
-</div>
+![Composite Leaderboard](screenshots/06_leaderboard.png)
 
 ---
 
 ### 7. Historical Audit & Telemetry Log
 > Filterable activity audit trail with scoped switching between "My Activity" and "Global Telemetry" feeds.
 
-<div align="center">
-  <img src="screenshots/07_match_history.png" alt="Audit & Telemetry Log" width="95%" style="border-radius: 8px; border: 1px solid #00e5ff; box-shadow: 0 0 20px rgba(0,229,255,0.2);" />
-</div>
+![Audit & Telemetry Log](screenshots/07_match_history.png)
 
 ---
 
