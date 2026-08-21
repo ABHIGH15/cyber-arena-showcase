@@ -3,18 +3,18 @@
 # ⚡ CYBER ARENA
 ### Automated Adversarial Defense Verification & Bounded Red-Team Platform
 
-[![Status: Production Prototype](https://img.shields.io/badge/Status-Research_Prototype_Freeze-00e5ff?style=for-the-badge&logo=shield)](https://github.com/ABHIGH15/cyber-arena-showcase)
+[![Status: Prototype Freeze](https://img.shields.io/badge/Status-Review_1_Freeze-00e5ff?style=for-the-badge&logo=shield)](https://github.com/ABHIGH15/cyber-arena-showcase)
 [![Engine: Dual-Oracle Verification](https://img.shields.io/badge/Engine-Dual--Oracle_Verification-00ff66?style=for-the-badge&logo=docker)](https://github.com/ABHIGH15/cyber-arena-showcase)
-[![Isolation: Docker cgroups & cap-drop](https://img.shields.io/badge/Isolation-Docker_cgroups_%26_cap--drop-ff003c?style=for-the-badge&logo=linux)](https://github.com/ABHIGH15/cyber-arena-showcase)
-[![Frontend: React 18 / Vite 5](https://img.shields.io/badge/Frontend-React_18_%2F_Vite_5-61dafb?style=for-the-badge&logo=react)](https://github.com/ABHIGH15/cyber-arena-showcase)
-[![Backend: Express 5 / Node.js](https://img.shields.io/badge/Backend-Express_5_%2F_Node.js-68a063?style=for-the-badge&logo=node.js)](https://github.com/ABHIGH15/cyber-arena-showcase)
+[![Isolation: Docker cgroups](https://img.shields.io/badge/Isolation-Docker_cgroups-ff003c?style=for-the-badge&logo=linux)](https://github.com/ABHIGH15/cyber-arena-showcase)
+[![Frontend: React 18](https://img.shields.io/badge/Frontend-React_18_%2F_Vite-61dafb?style=for-the-badge&logo=react)](https://github.com/ABHIGH15/cyber-arena-showcase)
+[![Backend: Node.js / Express](https://img.shields.io/badge/Backend-Node.js_%2F_Express-68a063?style=for-the-badge&logo=node.js)](https://github.com/ABHIGH15/cyber-arena-showcase)
 [![Database: PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL_15-336791?style=for-the-badge&logo=postgresql)](https://github.com/ABHIGH15/cyber-arena-showcase)
 
 <br/>
 
-**A next-generation cybersecurity research platform that elevates traditional Capture-The-Flag (CTF) competitions into dynamic, dual-oracle defensive invariant verification and live bounded adversarial red-team matches.**
+**An advanced cybersecurity research platform transforming traditional Capture-The-Flag competitions into dynamic defensive invariant verification and live bounded adversarial red-team testing.**
 
-[Explore Architecture](#-system-architecture) • [Research Novelty](#-the-core-problem--research-novelty) • [Visual Showcase](#-product-tour--visual-showcase) • [Mathematical Foundations](#-formal-mathematical-foundations) • [Confidential Code Access](#-source-code-access--recruiter-inquiries)
+[Overview](#-executive-summary) • [Research Novelty](#-research-novelty--comparative-matrix) • [Architecture](#-high-level-architecture-flow) • [Visual Showcase](#-product-tour--visual-showcase) • [Scoring Foundations](#-formal-scoring-foundations) • [Confidential Access](#-source-code-confidentiality--recruiter-inquiries)
 
 ---
 
@@ -22,58 +22,48 @@
 
 <br/>
 
-## 🎯 Executive Summary & Impact
+## 🎯 Executive Summary
 
-Traditional cybersecurity competitions evaluate **only offense**: static challenge containers are attacked once, rewards are binary (flag captured or not), and defensive code quality is never tested.
+Traditional cybersecurity competitions evaluate **only offensive exploitation**: static challenge containers are attacked once, rewards are binary (flag captured or not), and defensive code quality is never verified.
 
-**Cyber Arena fundamentally changes this paradigm:**
-1. **Dynamic Defensive Code Intake**: Defenders submit actual application source code patches (`app.js`) to fix live vulnerabilities.
-2. **Ephemeral Docker Sandbox Isolation**: Each patch is compiled in an isolated, resource-constrained container (`--cpus=0.5 --memory=512m --pids-limit=100 --cap-drop=ALL`).
-3. **Dual-Oracle Invariant Verification**: Candidate patches are continuously checked against an unpatched Reference Oracle to confirm baseline exploitability and verify genuine defense.
-4. **Deterministic 6-Axis Mutation Matrix**: Defensive patches are subjected to 17 versioned mutation vectors (character encodings, case variations, whitespace alterations, comment injections, syntax variations, and paired differential boolean checks).
-5. **Multi-Dimensional Resilience Scoring**: Quantifies both **Security Resilience ($R$)** against adversarial mutations and **Functional Correctness ($F$)** to prevent over-blocking and denial-of-service.
-6. **Live Bounded Red-Team Arena**: Verified defender containers are promoted into 20-minute adversarial match windows where human attackers probe the defended container in real time using a unified classifier.
+**Cyber Arena bridges this gap by introducing:**
+1. **Dynamic Defensive Code Intake**: Defenders submit actual application source code patches to remediate vulnerabilities in real time.
+2. **Ephemeral Sandbox Isolation**: Candidate code is compiled and isolated inside strictly bounded Docker environments.
+3. **Dual-Oracle Invariant Verification**: Continuous differential validation against an unpatched Reference Oracle to confirm baseline exploitability and verify genuine defense.
+4. **Deterministic 6-Axis Mutation Matrix**: Defensive patches are subjected to multi-axis evasion vectors (encodings, case shifts, whitespace variations, comment injections, and differential boolean assertions).
+5. **Dual-Dimension Scoring**: Evaluates both **Security Resilience ($R$)** against evasion mutations and **Functional Invariant Correctness ($F$)** to prevent denial-of-service and over-blocking.
+6. **Live Bounded Red-Team Arena**: Verified defender containers are promoted into 20-minute adversarial match windows where human attackers probe the live defended system in real time.
 
 ---
 
-## 🔬 The Core Problem & Research Novelty
+## 🔬 Research Novelty & Comparative Matrix
 
 | Dimension | Traditional CTF / Cyber Range | **Cyber Arena (This Platform)** |
 | :--- | :--- | :--- |
 | **Evaluation Focus** | Offensive exploits only | **Adversarial Defense Verification + Live Exploitation** |
-| **Challenge State** | Static, pre-compiled, vulnerable | **Dynamic runtime patched candidates** |
-| **Defense Verification** | None (no patch submission) | **Automated AST & source compilation in isolated sandbox** |
-| **Evasion Testing** | Single static payload test | **Deterministic 6-axis mutation engine (17 attack vectors)** |
-| **Over-Blocking Prevention** | Ignored (naive regexes pass) | **Functional Smoke Invariant ($F$) guarantees no DoS** |
+| **Challenge State** | Static, pre-compiled, vulnerable | **Dynamic runtime candidate patches** |
+| **Defense Verification** | None (no patch submission) | **Automated compilation & testing in isolated sandboxes** |
+| **Evasion Testing** | Single static payload test | **Deterministic 6-axis mutation benchmark matrix** |
+| **Over-Blocking Prevention** | Ignored (naive regexes pass) | **Functional Invariant ($F$) guarantees legitimate traffic passes** |
 | **Attacker-Defender Loop** | Asynchronous / disconnected | **Bounded 20-min Live Arena with real-time target switching** |
-| **Scoring Model** | Binary Flag submission | **Dual-dimension composite scoring ($R\% + F\% + \text{Flags}$)** |
+| **Scoring Model** | Binary Flag submission | **Composite scoring: Defensive Resilience ($R\%$) + Offensive Exploits** |
 
 ---
 
-## 🏛️ System Architecture
+## 🏛️ High-Level Architecture Flow
 
 ```mermaid
 flowchart TD
-    subgraph DEFENDER_PIPELINE["🛡️ 1. Defender Ingestion & Isolation"]
-        D[Defender Operative] -->|1. Submit Source Patch| API[API Gateway & Controller]
-        API -->|2. Ingest Patch| SB[Ephemeral Docker Sandbox Runner]
-        SB -->|3. Strict Limits: cpus=0.5, cap-drop=ALL| CT[Candidate Container :80]
-    end
-
-    subgraph ORACLE_EVALUATION["🔬 2. Dual-Oracle & Mutation Matrix"]
-        CT -->|4. Functional Smoke Invariant| FS{Admin Auth Valid? (F)}
-        FS -->|Passed F=100%| ME[Deterministic 6-Axis Attack Matrix]
-        FS -->|Failed F=0%| RJ[Reject Patch: Over-Blocking / DoS]
-        ME -->|5. 17 Mutation Vectors| RO[Dual-Oracle Differential Classifier]
-        RO -->|6. Compute Resilience R%| ER[Explainability & Telemetry Report]
-    end
-
-    subgraph LIVE_ARENA["⚔️ 3. Bounded Red-Team Live Arena"]
-        ER -->|7. Auto-Promote Container| LM[20-Min Bounded Match Window]
-        A[Red-Team Attacker] -->|8. Interactive Payload Forge| AC[Attacker Console]
-        AC -->|9. Proxied Attack Payload| LM
-        LM -->|10. Telemetry & Scoring| LB[Composite Global Leaderboard]
-    end
+    A[Defender Submits Patch] --> B[Isolated Docker Sandbox]
+    B --> C{Functional Smoke Invariant}
+    C -->|Failed / Over-blocking| D[Evaluation Rejected: DoS Detected]
+    C -->|Passed| E[6-Axis Mutation Attack Matrix]
+    E --> F[Dual-Oracle Differential Classifier]
+    F --> G[Resilience Score & Explainability Report]
+    G --> H[Promote to 20-Min Live Arena Match]
+    I[Red-Team Attacker] --> J[Interactive Exploit Console]
+    J --> H
+    H --> K[Composite Global Leaderboard]
 ```
 
 ---
@@ -88,7 +78,7 @@ flowchart TD
 ---
 
 ### 2. Defender IDE & 1-Click Sandbox Evaluation Runner
-> Integrated browser code editor featuring AST templates, immediate Docker sandbox compilation, functional smoke invariants, and automated 6-axis mutation benchmark execution in a single click.
+> Browser code editor with pre-loaded defensive templates, instant Docker sandbox compilation, functional smoke invariants, and automated 6-axis mutation evaluation in a single click.
 
 ![Defender IDE & Evaluation](screenshots/02_defender_submission.png)
 
@@ -102,7 +92,7 @@ flowchart TD
 ---
 
 ### 4. Live Adversarial Red-Team Arena & Payload Forge
-> Full-screen interactive attacker terminal equipped with categorized attack matrix chips, multi-target defender container switching, high-contrast digital match window countdown (`20m 00s Total`), and instant match conclusion controls.
+> Interactive attacker terminal equipped with categorized attack matrix chips, multi-target defender container switching, high-contrast digital match window countdown (`20m 00s Total`), and instant match conclusion controls.
 
 ![Live Attacker Arena](screenshots/04_attacker_arena.png)
 
@@ -129,56 +119,43 @@ flowchart TD
 
 ---
 
-## 📐 Formal Mathematical Foundations
+## 📐 Formal Scoring Foundations
 
 ### 1. Security Resilience Metric ($R$)
 $$\text{Resilience } R = \left( \frac{\text{Blocked Valid Attacks}}{\text{Total Evaluated Mutation Vectors}} \right) \times 100\%$$
 
 ### 2. Functional Invariant Metric ($F$)
-$$F = \begin{cases} 100\% & \text{if } \text{VerifyAuthenticAuth}(\text{Patch}, \text{Creds}_{\text{valid}}) \to \text{SUCCESS} \\ 0\% & \text{if } \text{DoS or Over-blocking is detected} \end{cases}$$
+$$F = \begin{cases} 100\% & \text{if legitimate authentication succeeds (No Over-blocking)} \\ 0\% & \text{if application crashes or denies authentic credentials} \end{cases}$$
 
-### 3. The `DB_ERROR` Security Classification Theorem
-> In standard web application environments, unhandled database errors (e.g. SQLite `SQLITE_ERROR`, PostgreSQL syntax exceptions) reveal internal database structure, enable error-based extraction, and represent unhandled injection state. **Cyber Arena formally classifies all unhandled DB Errors as Security Failures (Attack SUCCESS), preventing superficial regex filters from scoring falsely high.**
-
----
-
-## 🔒 Security & Sandbox Isolation Guarantees
-
-Cyber Arena enforces enterprise-grade multi-tenant containment on all submitted code patches:
-- **CPU Quota**: Max 0.5 Cores (`--cpus="0.5"`) via Linux cgroups.
-- **Memory Ceiling**: Strict 512MB RAM cap (`--memory="512m"`), preventing out-of-memory host exhaustion.
-- **Process Cap**: Max 100 concurrent PIDs (`--pids-limit=100`), mitigating fork-bomb vectors.
-- **Capability Dropping**: Strips all Linux root capabilities (`--cap-drop=ALL`).
-- **Network Isolation**: Isolated per-evaluation Docker bridge network with localhost port binding (`127.0.0.1::80`).
-- **Automated Janitor Reaper**: 15-second background sweeper that automatically terminates expired match containers, reclaims orphaned memory, and prunes unused bridge networks.
+### 3. The `DB_ERROR` Security Classification Principle
+> In production web application environments, unhandled database errors (e.g. SQL syntax exceptions) reveal internal database schema, enable error-based extraction, and represent unhandled injection state. **Cyber Arena formally classifies all unhandled DB Errors as Security Failures (Attack SUCCESS), preventing superficial regex filters from scoring falsely high.**
 
 ---
 
-## 🛠️ Technology Stack & Engineering Highlights
+## 🔒 Multi-Tenant Containment Guarantees
 
-```text
-├── Frontend Architecture
-│   ├── Framework: React 18.2 + Vite 5 (Sub-700ms production builds)
-│   ├── Design System: Pure CSS Variables, Cyber Glassmorphism, Zero Heavy UI Frameworks
-│   ├── Routing & State: React Router DOM 6.23, Custom Event-driven Toast & Modal System
-│   └── Icons: Lucide React
-│
-├── Backend & Evaluation Engine
-│   ├── Server Runtime: Node.js 24 + Express 5.2 (RESTful Architecture)
-│   ├── Orchestration: Native Docker Engine CLI Integration + cgroups API
-│   ├── Persistence: PostgreSQL 15 (ACID-compliant CTE scoring queries)
-│   ├── Isolation: In-memory SQLite3 harnesses + Ephemeral Docker network bridges
-│   └── Janitor Engine: Autonomous 15-second process sweeper & container reaper
-```
+Cyber Arena enforces container-level isolation on all submitted candidate patches:
+- **CPU Quota**: Strict core allocation via Linux kernel cgroups.
+- **Memory Ceiling**: Strict RAM allocation, preventing host memory exhaustion.
+- **Process Limit**: Hard PID limits mitigating fork-bomb vectors.
+- **Capability Dropping**: Strips Linux root capabilities (`cap-drop=ALL`).
+- **Network Boundaries**: Ephemeral per-evaluation bridge networks with localhost-only port bindings.
+- **Autonomous Resource Janitor**: Background garbage collection sweeps the daemon to terminate expired match containers and reclaim resources.
 
 ---
 
-## 🔐 Source Code Access & Recruiter Inquiries
+## 🛠️ Technology Stack
 
-> ### ⚠️ Intellectual Property & Academic Review Notice
-> The full source codebase, automated mutation algorithms, and proprietary dual-oracle test harnesses are currently maintained in a private repository due to:
-> 1. **Academic Peer Review & Capstone Evaluation Integrity**: Preventing live challenge solutions from leaking during institutional evaluation.
-> 2. **Intellectual Property Protection**: Safeguarding the custom multi-oracle evaluation engine and mutation algorithms.
+- **Frontend**: React 18, Vite 5, React Router, Lucide Icons, Pure CSS Glassmorphism Design Tokens.
+- **Backend**: Node.js, Express, PostgreSQL 15, Docker Engine Integration, SQLite3 in-memory test harnesses.
+- **Security & Sandboxing**: Linux cgroups, ephemeral container bridges, deterministic mutation operators.
+
+---
+
+## 🔐 Source Code Confidentiality & Recruiter Inquiries
+
+> ### ⚠️ Intellectual Property & Research Notice
+> The full source code, proprietary mutation heuristics, and automated test harnesses are maintained in a private repository to preserve academic integrity and intellectual property during ongoing capstone evaluation.
 >
 > ---
 >
@@ -188,7 +165,7 @@ Cyber Arena enforces enterprise-grade multi-tenant containment on all submitted 
 > If you are considering me for Software Engineering, DevSecOps, or Cybersecurity roles, feel free to reach out directly:
 >
 > - **👤 Candidate**: **Abhishek**
-> - **📧 Email**: [abhisharma.career@gmail.com](mailto:abhisharma.career@gmail.com) *(or your preferred email)*
+> - **📧 Email**: [abhisharma.career@gmail.com](mailto:abhisharma.career@gmail.com)
 > - **💼 LinkedIn**: [linkedin.com/in/abhigh15](https://www.linkedin.com/in/abhigh15)
 > - **🐙 GitHub**: [@ABHIGH15](https://github.com/ABHIGH15)
 >
