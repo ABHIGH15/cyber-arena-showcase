@@ -164,9 +164,8 @@ Cyber Arena enforces container-level isolation on all submitted candidate patche
 >
 > If you are considering me for Software Engineering, DevSecOps, or Cybersecurity roles, feel free to reach out directly:
 >
-> - **👤 Candidate**: **Abhishek**
-> - **📧 Email**: [abhisharma.career@gmail.com](mailto:abhisharma.career@gmail.com)
-> - **💼 LinkedIn**: [linkedin.com/in/abhigh15](https://www.linkedin.com/in/abhigh15)
+> - **👤 Candidate**: **AMIT KUMAR GUPTA**
+> - **📧 Email**: [amitgupta150306@gmail.com](mailto:amitgupta150306@gmail.com)
 > - **🐙 GitHub**: [@ABHIGH15](https://github.com/ABHIGH15)
 >
 > *Confidential repository access can be granted within 24 hours via GitHub collaborator invitation.*
