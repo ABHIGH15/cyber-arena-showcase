@@ -358,8 +358,8 @@ The core innovations of Cyber Arena are documented in full formal detail within 
 
 If you are considering me for Software Engineering, DevSecOps, or Cybersecurity roles, feel free to reach out directly:
 
-- **👤 Candidate / Author**: **AMIT KUMAR GUPTA**
-- **📧 Email**: [amitgupta150306@gmail.com](mailto:amitgupta150306@gmail.com) • [abhisharma.career@gmail.com](mailto:abhisharma.career@gmail.com)
+- **👤 Author**: **AMIT KUMAR GUPTA**
+- **📧 Email**: [amitgupta150306@gmail.com](mailto:amitgupta150306@gmail.com) 
 - **🐙 GitHub**: [@ABHIGH15](https://github.com/ABHIGH15)
 - **📂 Development Repository**: `ABHIGH15/cyber-arena` *(Private)*
 
@@ -367,7 +367,7 @@ If you are considering me for Software Engineering, DevSecOps, or Cybersecurity 
 
 ### Academic Citation
 ```bibtex
-@misc{gupta2026cyberarena,
+@misc{amit2026cyberarena,
   author = {Amit Kumar Gupta},
   title = {Cyber Arena: A Reproducible Security-Patch Evaluation Platform via Reference-Validated Adversarial Mutation Testing and Multi-Stream Evidence Correlation},
   year = {2026},
