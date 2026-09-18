@@ -20,7 +20,7 @@ The source repository is currently set to **Private** to ensure:
 If you are a **recruiter, engineering hiring manager, or academic evaluator** who would like to inspect the complete codebase, review the commit trajectory, or schedule an interactive live walkthrough:
 
 ### Fast-Track Access:
-1. Send an email to **[abhisharma.career@gmail.com](mailto:abhisharma.career@gmail.com)** with the subject:
+1. Send an email to **[amitgupta150306@gmail.com](mailto:amitgupta150306@gmail.com)** with the subject:
    `[Cyber Arena Code Access Request] - <Your Company / Organization Name>`
 2. Include your **GitHub username**.
 3. You will be added as a **read-only collaborator** to the private development repository (`ABHIGH15/cyber-arena`) within 24 hours.
